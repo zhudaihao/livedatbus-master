@@ -47,6 +47,21 @@ allprojects {
 	</dependency>
   
   
+  一行代码实现消息发送
+   LiveDataBus.getDefault().withCreation("homebean", HomeBean.class).postValue(homeBean);
+   
+   一行代码实现消息的订阅
+       //订阅
+        LiveDataBus.getDefault().with("homebean", HomeBean.class).observe(this, new Observer<HomeBean>() {
+            @Override
+            public void onChanged(HomeBean homeBean) {
+                //订阅结果回调
+                button.setText(homeBean.getName());
+
+            }
+        });
+   
+  
 
 
 具体详情 https://blog.csdn.net/qq_36237165/article/details/104878044
