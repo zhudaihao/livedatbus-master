@@ -13,14 +13,12 @@ allprojects {
 			...
 			maven { url 'https://jitpack.io' }
 			
-			
 		}
 	}
   
   
   Step 2. Add the dependency
   dependencies {
-  
   
 	        implementation 'com.github.zhudaihao:livedatbus-master:1.0'
 		
@@ -39,6 +37,7 @@ allprojects {
 	</repositories>
   
   Step 2. Add the dependency
+  
   	<dependency>
 	
 	    <groupId>com.github.zhudaihao</groupId>
