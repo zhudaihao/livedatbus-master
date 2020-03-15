@@ -21,7 +21,7 @@ allprojects {
   Step 2. Add the dependency
   dependencies {
   
-  //Tag 版本号
+  
 	        implementation 'com.github.zhudaihao:livedatbus-master:1.0'
 		
 	}
