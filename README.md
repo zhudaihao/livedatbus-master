@@ -25,32 +25,36 @@ allprojects {
 	}
   
   
-  maven导入
-  Step 1. Add the JitPack repository to your build file
-  <repositories>
-		<repository>
+maven导入
+
+Step 1. Add the JitPack repository to your build file
+<repositories>
+<repository>
 			
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
 		    
-		</repository>
-	</repositories>
+</repository>
+</repositories>
   
   Step 2. Add the dependency
   
-  	<dependency>
+  <dependency>
 	
 	    <groupId>com.github.zhudaihao</groupId>
 	    <artifactId>livedatbus-master</artifactId>
 	    <version>Tag</version>
 	    
-	</dependency>
+</dependency>
   
+  使用：
   
   一行代码实现消息发送
+  
    LiveDataBus.getDefault().withCreation("homebean", HomeBean.class).postValue(homeBean);
    
    一行代码实现消息的订阅
+   
        //订阅
         LiveDataBus.getDefault().with("homebean", HomeBean.class).observe(this, new Observer<HomeBean>() {
             @Override
