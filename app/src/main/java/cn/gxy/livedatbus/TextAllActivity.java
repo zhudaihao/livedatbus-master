@@ -12,7 +12,7 @@ import livedatabus.LiveDataBus;
 
 
 /**
- * 测试没有在发送后 订阅的用户
+ * 测试 在发送后 订阅的用户
  */
 public class TextAllActivity extends AppCompatActivity {
     private Button button;
