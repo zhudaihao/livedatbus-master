@@ -51,7 +51,8 @@ Step 1. Add the JitPack repository to your build file
   
   一行代码实现消息发送
   
-   LiveDataBus.getDefault().withCreation("homebean", HomeBean.class).postValue(homeBean);
+      //发送
+      LiveDataBus.getDefault().withCreation("homebean", HomeBean.class).postValue(homeBean);
    
    一行代码实现消息的订阅
    
